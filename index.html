@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>1.Write a Javascript program on Fibonacci seriers</p>
+    <p>2.Write a Javascript program to convert a temperature from Celsius to Fahrenheit</p>
+    <p>3.Write a javascript program to find square root of number</p>
+    <p>4.Write a javascript program to generate a random integer between two given numbers</p>
+    <p>5.Write a Javascript program to check if the passed string is palindrome or not</p>
+</body>
+<script>
+    //Fibonacci series
+    function fibonacci(n) {
+        let fib = [0, 1];
+        for (i = 2; i <= n; i++) {
+            fib[i] = fib[i - 1] + fib[i - 2];
+        }
+        return fib;
+    }
+    console.log('Fibonacci series is :', fibonacci(6))
+    //Celsius to Fahrenhit
+    function temp(celsius) {
+        let fahrenheit = celsius * 1.8 + 32;
+        return fahrenheit;
+    }
+    console.log('Celsiud to fehrenhit is :', temp(34))
+    //Square root of number
+    function sqrt(num) {
+        return sqrtnum;
+    }
+    let num = Math.sqrt(64)
+    console.log('Sqrt of a number is :', num)
+    //Random integer b/w two given numbers
+    function random(num) {
+        return randomnumber;
+    }
+    let random1 = Math.floor(Math.random() * 56789);
+    console.log('The Random is :', random1)
+    //Palindrome Question
+    function isPalindrome(str) {
+        let j = str.length - 1;
+        for (let i = 0; i < str.length / 2; i++) {
+            if (str[i] !== str[j]) {
+                return 'not a Palindrome';
+            }
+            j--;
+        }
+        return 'Palindrome';
+    }
+    let name = "Charan";
+    let name1 = "civic";
+    console.log(`${name} is ${isPalindrome(name)}`)
+    console.log(`${name1} is ${isPalindrome(name1)}`)
+</script>
+</html>
